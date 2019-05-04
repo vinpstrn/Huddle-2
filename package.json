@@ -16,6 +16,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   },
+  "homepage": "https://vinpstrn.github.io/Huddle-2",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
