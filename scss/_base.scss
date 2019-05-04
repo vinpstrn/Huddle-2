@@ -1,0 +1,243 @@
+body {
+    font-family: $font-primary;
+    font-size: 1.8rem;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+// HEADER
+.header {
+    height: 100vh;
+    background-image: url(/images/bg-hero-desktop.svg);
+    padding: 5rem 8rem 8rem 8rem;
+    background-color: $color-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__bg {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    &__heading-wrapper {
+        display: flex;
+        font-family: $font-secondary;
+        align-items: center;
+        margin-top: 7rem;
+    }
+
+    &__heading-box {
+        margin-bottom: 8rem;
+        flex: 0 0 45%;
+        padding-right: 5rem;
+    }
+
+    &__heading {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        color: $color-dark;
+    }
+
+    &__btn {
+        display: inline-block;
+    }
+
+    &__photo-box {
+        flex: 0 0 55%;
+    }
+
+    &__photo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+// NAV
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: inline-block;
+    }
+
+    &__btn {
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba($color-dark, 0.2);
+    }
+}
+
+// MAIN
+.main {
+    padding: 16rem 8rem 32rem 8rem;
+
+    &__box {
+        display: flex;
+        box-shadow: 0 5px 3rem rgba($color-dark, 0.1);
+        border-radius: .5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__heading-box {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 0 3rem 8rem;
+
+        &--2 {
+            order: 2;
+        }
+
+    }
+
+    &__heading {
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+        color: $color-dark;
+    }
+
+    &__paragraph {
+        color: $color-gray;
+    }
+
+    &__photo-box {
+        flex: 0 0 50%;
+        padding: 3rem 0 3rem 8rem;
+        text-align: right;
+        
+        .main__photo:nth-child(odd) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__photo {
+        height: 32rem;
+        width: auto;
+        display: inline-block;
+        max-width: 100%;
+    }
+}
+
+// CTA 
+.cta {
+    position: absolute;
+    top: -17rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 5px 3rem rgba($color-dark, 0.1);
+    height: 28rem;
+    width: 80rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__heading {
+        margin-bottom: 3rem;
+        color: $color-dark;
+    }
+}
+
+// FOOTER
+.footer {
+    background-color: $color-dark;
+    padding: 20rem 8rem 5rem 8rem;
+    position: relative;
+    color: $color-light;
+    font-size: 1.5rem;
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__contact-wrapper {
+        display: flex;
+        margin-bottom: 1.5rem;
+        align-items: flex-start;
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+        display: block;
+        flex: 0 0 3rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__details {
+        flex: 1;
+    }
+
+    &__list {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 3rem;
+    }
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 1.5rem; 
+    }
+
+    &__link {
+        color: $color-light;
+    }
+
+    &__social-media-box {
+        text-align: center;
+    }
+
+    &__social-media-icon {
+        height: 4rem;
+        width: 4rem;
+        padding: 1rem;
+        border: 1px solid $color-light;
+        border-radius: 5rem;
+        display: inline-block;
+        box-sizing: border-box;
+        fill: $color-light;
+        margin-right: 1.5rem;
+
+    }
+
+    &__copyright {
+        text-align: right;
+        margin-top: 3rem;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+}
